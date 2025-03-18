@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Пример на Room</string>
+    <string name="action_settings">Настройки</string>
+    <string name="hint_word">Слово...</string>
+    <string name="button_save">Сохранить</string>
+    <string name="empty_not_saved">Слово не сохранено!</string>
+</resources>
