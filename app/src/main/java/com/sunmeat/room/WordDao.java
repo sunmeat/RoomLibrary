@@ -1,5 +1,7 @@
 package com.sunmeat.room;
 
+import android.database.Cursor;
+
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
@@ -21,4 +23,7 @@ public interface WordDao {
 
     @Query("SELECT * FROM word_table WHERE word = :word")
     Word getWord(String word);
+
+    @Query("SELECT * FROM word_table ORDER BY word ASC")
+    Cursor getAllWordsCursor();
 }
